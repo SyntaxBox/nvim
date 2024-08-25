@@ -124,6 +124,12 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
+			["eslint"] = function()
+				lspconfig["eslint"].setup({
+					capabilities = capabilities,
+					-- Add any specific ESLint configuration here
+				})
+			end,
 			["emmet_ls"] = function()
 				lspconfig["emmet_ls"].setup({
 					capabilities = capabilities,

@@ -40,5 +40,5 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
-vim.o.spell = true
-vim.o.spelllang = "en" -- Set your preferred language
+-- vim.o.spell = true
+-- vim.o.spelllang = "en" -- Set your preferred language
