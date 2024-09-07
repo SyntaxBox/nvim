@@ -76,7 +76,14 @@ return {
 			local hl = "DiagnosticSign" .. type
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
-
+		cmp.setup.filetype("typescriptreact", {
+			sources = cmp.config.sources({
+				{ name = "nvim_lsp" },
+				{ name = "codeium" },
+				{ name = "buffer" },
+				{ name = "path" },
+			}),
+		})
 		-- Configure nvim-cmp
 		cmp.setup({
 			snippet = {
