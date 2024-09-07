@@ -48,5 +48,7 @@ return {
 		vim.keymap.set("n", "]b", "<CMD>BufferLineMoveNext<CR>")
 		vim.keymap.set("n", "[b", "<CMD>BufferLineMovePrev<CR>")
 		vim.keymap.set("n", "gs", "<CMD>BufferLineSortByDirectory<CR>")
+		vim.keymap.set("n", "<leader>bc", "<CMD>bdelete<CR>")
+		vim.keymap.set("n", "<leader>ba", "<CMD>bufdo bdelete<CR>")
 	end,
 }
