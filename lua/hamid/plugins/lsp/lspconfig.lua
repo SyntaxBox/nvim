@@ -78,8 +78,8 @@ return {
 		end
 		cmp.setup.filetype("typescriptreact", {
 			sources = cmp.config.sources({
-				{ name = "nvim_lsp" },
 				{ name = "codeium" },
+				{ name = "nvim_lsp" },
 				{ name = "buffer" },
 				{ name = "path" },
 			}),
@@ -97,11 +97,14 @@ return {
 				["<C-y>"] = cmp.mapping.confirm({ select = true }), -- Confirm selection
 				["<C-e>"] = cmp.mapping.abort(), -- Cancel completion
 			},
-			sources = {
+			sources = cmp.config.sources({
+				{ name = "codeium" },
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
-				-- Add other sources here
-			},
+				{ name = "buffer" },
+				{ name = "path" },
+			}),
+
 			preselect = cmp.PreselectMode.Item, -- Automatically focus on the first item
 		})
 
