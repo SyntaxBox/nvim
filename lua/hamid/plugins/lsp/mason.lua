@@ -47,6 +47,7 @@ return {
 				"ast_grep",
 				"sqlls",
 				"typos_lsp",
+				"jdtls",
 			},
 		})
 		mason_tool_installer.setup({
