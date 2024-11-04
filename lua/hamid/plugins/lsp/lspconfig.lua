@@ -92,8 +92,8 @@ return {
 				end,
 			},
 			mapping = {
-				["<C-n>"] = cmp.mapping.select_next_item(), -- Move to the next item
-				["<C-p>"] = cmp.mapping.select_prev_item(), -- Move to the previous item
+				["j"] = cmp.mapping.select_next_item(), -- Move to the next item with 'j'
+				["k"] = cmp.mapping.select_prev_item(), -- Move to the previous item with 'k'
 				["<C-y>"] = cmp.mapping.confirm({ select = true }), -- Confirm selection
 				["<C-e>"] = cmp.mapping.abort(), -- Cancel completion
 			},
